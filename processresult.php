@@ -34,7 +34,7 @@ if (mysqli_connect_errno()) {
 	}	
 /* Remove this 'else' statement	once you know your connection settings work */
 else{
-	echo 'Connect Test was Successful!';
+	echo 'Connection Test was Successful!';
 }
 
     /*
