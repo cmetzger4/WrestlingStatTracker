@@ -7,7 +7,13 @@
   $resultType = $_POST['resultType'];
   $venue = $_POST['venue'];
   $DOCUMENT_ROOT = $_SERVER['DOCUMENT_ROOT'];
+  
+  // other variables
   $date = date('H:i, jS F Y');
+  $dbHost = 'localhost';
+  $dbName = '<ENTER DATABASE NAME HERE>';
+  $dbUserName = '<ENTER DATABASE USERNAME HERE>';
+  $dbPassword = '<ENTER DATABASE PASSWORD HERE>';
 ?>
 
 <html>
@@ -19,6 +25,17 @@
 <h2>Results Entry</h2>
 
 <?php
+
+@ $db = new mysqli($dbHost, $dbUserName, $dbPassword, $dbName);
+
+if (mysqli_connect_errno()) {
+     echo 'Error: Could not connect to database.  Please try again later.';
+     exit;
+	}	
+/* Remove this 'else' statement	once you know your connection settings work */
+else{
+	echo 'Connect Test was Successful!';
+}
 
     /*
     echo "<p>".$resultDate."</p>";
