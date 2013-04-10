@@ -7,5 +7,6 @@ CREATE TABLE  `metzgecl`.`Match` (
 	`WeightClass` ENUM(  '106',  '113',  '120',  '126',  '132',  '138',  '145',  '152',  '160',  '170',  '184',  '195',  '220',  '285' ) NOT NULL ,
 	`OpponentFirstName` VARCHAR( 30 ) NOT NULL ,
 	`OpponentLastName` VARCHAR( 30 ) NOT NULL ,
+	`OpponentSchool` VARCHAR( 50 ) NOT NULL,
 	`Venue` VARCHAR( 50 ) NOT NULL
 ) ENGINE = MYISAM ;
