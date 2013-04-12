@@ -19,6 +19,7 @@
 <ul>
 <li><a href="home.html">Home</a></li><!-- create a link to go to the home page -->
 <li><a href="resultentry.html">Stat Entry</a></li><!-- create a link to go to the page to enter stats -->
+<li><a href="wrestlerentry.html">Wrestler Entry</a></li><!-- create a link to enter a new wrestler -->
 <li><a href="season.php">Season Stats</a></li><!-- create a link to go to the page to view current season stats -->
 <li><a href="records.php">View Records</a></li><!-- create a link to go to the records page -->
 </ul>
@@ -36,31 +37,31 @@
 <table border="0">
 <tr>
   <td>Date</td>
-  <td align="Center"><input type="text" name="resultDate" size="20" maxlength="20"/></td>
+  <td align="center"><input type="text" name="resultDate" size="20" maxlength="20"/></td>
 </tr>
 <tr>
   <td>Opponent First Name</td>
-  <td align="Center"><input type="text" name="opponentFirstName" size="20" maxlength="20"/></td>
+  <td align="center"><input type="text" name="opponentFirstName" size="20" maxlength="20"/></td>
 </tr>
 <tr>
   <td>Opponent Last Name</td>
-  <td align="Center"><input type="text" name="opponentLastName" size="20" maxlength="20"/></td>
+  <td align="center"><input type="text" name="opponentLastName" size="20" maxlength="20"/></td>
 </tr>
 <tr>
   <td>Opponent School</td>
-  <td align="Center"><input type="text" name="opponentSchool" size="20" maxlength="50"/></td>
+  <td align="center"><input type="text" name="opponentSchool" size="20" maxlength="50"/></td>
 </tr>
 <tr>
   <td>Result</td>
-  <td align="Center"><input type="text" name="result" size="20" maxlength="20"/></td>
+  <td align="center"><input type="radio" name="result" value="W"/>Win<input type="radio" name="result" value="L"/>Loss</td>
 </tr>
 <tr>
   <td>Result Type</td>
-  <td align="Center"><input type="text" name="resultType" size="20" maxlength="20"/></td>
+  <td align="center"><input type="radio" name="resultType" value="Decision"/>Dec<input type="radio" name="resultType" value="MajorDecision"/>MD<input type="radio" name="resultType" value="TechFall"/>TechFall<input type="radio" name="resultType" value="Pin"/>Pin</td>
 </tr>
 <tr>
   <td>Venue</td>
-  <td align="Center"><input type="text" name="venue" size="40" maxlength="40"/></td>
+  <td align="center"><input type="text" name="venue" size="40" maxlength="40"/></td>
 </tr>
 <tr>
   <td colspan="2" align="center"><input type="submit" value="Submit"/></td>
