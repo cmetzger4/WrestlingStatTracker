@@ -48,7 +48,7 @@
 	float: left;
 	clear: left;
 	width: 25%;
-	
+	border: 1px solid yellow;
 	margin-left: 1em;
 	padding: .25em;
 }
@@ -61,7 +61,7 @@
 	width: 70%;
 	float: right;
 	clear: right;
-	
+	border: 1px solid yellow;
 	margin-right: 1em;
 	padding: .25em;
 }
@@ -74,6 +74,24 @@
 #homecontent-right p {
 	color: yellow;
 	text-align: center;
+}
+
+
+
+
+#result-table {
+	margin-left: 2em;
+	margin-right: 2em;
+	color: yellow;
+}
+
+#result-table h2 {
+	text-align: center;
+}
+
+#center-table {
+	margin-left: 30%;
+	margin-right: 25%;
 }
 
 /* ---------------------------------------------  footer    -------------------------------  */
