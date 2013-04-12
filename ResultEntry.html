@@ -1,11 +1,37 @@
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+
 <head>
-  <title>Wrestling Tracker - Entry Page</title>
+<title>Moeller Wrestling</title>
+
+<link href="style.css" rel="stylesheet" type="text/css" />
 </head>
+
 <body>
-<h1>Wrestling Tracker</h1>
+
+<div id="wrapper"><!-- create a div for a wrapper -->
+<div id="banner"><!--create a div for banner/title -->
+<h1> Moeller Wrestling </h1>
+</div><!-- end banner -->
+<div id="navigation"><!-- creating a div for links -->
+
+<ul>
+<li><a href="home.html">Home</a></li><!-- create a link to go to the home page -->
+<li><a href="resultentry.html">Stat Entry</a></li><!-- create a link to go to the page to enter stats -->
+<li><a href="season.php">Season Stats</a></li><!-- create a link to go to the page to view current season stats -->
+<li><a href="records.php">View Records</a></li><!-- create a link to go to the records page -->
+</ul>
+</div><!-- end navigation -->
+
+
+<div id="content"><!-- create a div for content -->
+
+<div id="result-table"><!-- create a div for the table to enter stats in -->
+<h2>Wrestling Tracker</h2>
 <h2>Results Entry</h2>
 
+<div id="center-table"><!-- create a div to make table center on page -->
 <form action="processresult.php" method="post">
 <table border="0">
 <tr>
@@ -41,6 +67,15 @@
 </tr>
 </table>
 </form>
+</div><!-- end center-table -->
+</div><!-- end result-table -->
+</div><!-- end content -->
 
+
+<div id="footer"><!-- create div for footer -->
+<h3>Archbishop Moeller High School&nbsp; &nbsp;| &nbsp; &nbsp; 9011 Montgomery Road &nbsp; &nbsp;| &nbsp; &nbsp; Cincinnati, OH &nbsp; &nbsp;| &nbsp; &nbsp; Head Coach: Jeff Gaier</h3>
+</div><!--end footer -->
+</div><!-- end wrapper -->
 </body>
+
 </html>
