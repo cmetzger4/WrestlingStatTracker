@@ -25,33 +25,10 @@
 </ul>
 </div><!-- end navigation -->
 
-<div id="content">
-<div id="result-table"><!-- create a div for the table to enter stats/wrestlers in -->
-<h2>Wrestling Tracker</h2>
-<h2>Wrestler Entry</h2>
+<div id="content"><!-- create a div for content -->
 
-<div id="center-table">
-<form action="processwrestler.php" method="post">
-<table border="0">
-<tr>
-  <td>First Name</td>
-  <td align="center"><input type="text" name="firstName" size="20" maxlength="20"/></td>
-</tr>
-<tr>
-  <td>Last Name</td>
-  <td align="center"><input type="text" name="lastName" size="20" maxlength="20"/></td>
-</tr>
-<tr>
-  <td>Class (Ex. 2007)</td>
-  <td align="center"><input type="text" name="class" size="20" maxlength="4"/></td>
-</tr>
-<tr>
-  <td colspan="2" align="center"><input type="submit" value="Submit"/></td>
-</tr>
-</table>
-</form>
-</div>
-</div><!-- end result-table -->
+<p align="center"> nothing here yet </p>
+
 </div><!-- end content -->
 
 
