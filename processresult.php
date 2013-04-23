@@ -4,7 +4,7 @@
 <?php
 
   // create short variable names
-  //$wrestlerID = 1;                        // *** NEED TO FIGURE OUT HOW WE ARE GOING TO CHOOSE THE CURRENT WRESTLER ***
+  $wrestlerID = $_POST['wrestlerID']; 
   $resultDate = $_POST['resultDate']; 
   $opponentFirstName = trim($_POST['opponentFirstName']);
   $opponentLastName = trim($_POST['opponentLastName']);
@@ -66,8 +66,8 @@ else{
 	}
 
 	
-$insertResultsQuery = "INSERT INTO ".$dbName.".Match (Year, OpponentFirstName, OpponentLastName, OpponentSchool, Result, ResultType, WeightClass, Venue)".
-					 "VALUES ( '".$resultDate."', '".$opponentFirstName."', '".$opponentLastName."', '".$opponentSchool."', '".$result."', '".$resultType."', '".$weightClass."', '".$venue."')";
+$insertResultsQuery = "INSERT INTO ".$dbName.".Match (WrestlerID, DateOfMatch, OpponentFirstName, OpponentLastName, OpponentSchool, Result, ResultType, WeightClass, Venue)".
+					 "VALUES ( '".$wrestlerID."', '".$resultDate."', '".$opponentFirstName."', '".$opponentLastName."', '".$opponentSchool."', '".$result."', '".$resultType."', '".$weightClass."', '".$venue."')";
 
 $insertResultsCheck = $db->query($insertResultsQuery);
 
